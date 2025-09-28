@@ -1,0 +1,923 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Cask & Quill</title>
+  <meta name="title" content="Cask & Quill - Read More And Make Success">
+  <meta name="description"
+    content="Read More And Make Success The Result Of Perfection. - Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad harum quibusdam, assumenda quia explicabo.">
+
+  <link rel="shortcut icon" href="/images/favicon.svg" type="image/svg+xml">
+
+  <link rel="stylesheet" href="/css/style.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Philosopher:wght@400;700&family=Poppins:wght@400;500;600&display=swap"
+    rel="stylesheet">
+
+  <link rel="preload" as="image" href="/images/hero-banner.png">
+
+</head>
+
+<body>
+
+<header class="header" data-header>
+  <div class="container">
+
+    <a href="#" class="logo">Cask & Quill</a>
+
+    <nav class="navbar" data-navbar>
+      <ul class="navbar-list">
+
+        <li class="navbar-item">
+          <a href="#home" class="navbar-link" data-nav-link>Home</a>
+        </li>
+
+        <li class="navbar-item">
+          <a href="/public2/main" class="navbar-link" data-nav-link>Favourites</a>
+        </li>
+
+        <li class="navbar-item dropdown">
+          <a href="#" class="navbar-link" data-nav-link id="genreButton">Genre ▼</a>
+          <ul class="dropdown-menu" id="genreDropdown">
+            <li><a href="/api/genre3" >Fiction</a></li>
+            <li><a href="/api/genre2" >Romance</a></li>
+            <li><a href="/api/genre1" >Horror</a></li>
+            <li><a href="/api/genre" >Spiritual</a></li>
+          </ul>
+        </li>
+
+        <li class="navbar-item">
+          <a href="#pricing" class="navbar-link" data-nav-link>TTS</a>
+        </li>
+
+    <li class="navbar-item">
+        <a href="/api/about" class="navbar-link" data-nav-link
+            >About Us</a>
+
+        <li class="navbar-item">
+          <a href="#contact" class="navbar-link" data-nav-link>Contact</a>
+        </li>
+
+      </ul>
+    </nav>
+
+  </div>
+</header>
+
+
+<script>
+  document.getElementById("genreButton").addEventListener("click", function(event) {
+  event.preventDefault(); // Prevent default anchor behavior
+  document.querySelector(".dropdown").classList.toggle("active");
+});
+
+</script>
+
+<style>
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  background: white;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  list-style: none;
+  padding: 8px 0;
+  min-width: 150px;
+  top: 100%;
+  left: 0;
+  z-index: 100;
+}
+
+.dropdown-menu li {
+  padding: 10px 15px;
+}
+
+.dropdown-menu li a {
+  text-decoration: none;
+  color: black;
+  display: block;
+  padding: 5px 15px;
+  transition: background 0.3s;
+}
+
+.dropdown-menu li a:hover {
+  background: #f0f0f0;
+  border-radius: 5px;
+}
+
+.dropdown.active .dropdown-menu {
+  display: block;
+}
+
+
+
+  .navbar-link {
+  color: white; 
+  text-decoration: none;
+}
+
+.navbar-link:hover {
+  color: lightgray; 
+}
+</style>
+
+        </ul>
+      </nav>
+
+      <button class="nav-toggle-btn" aria-label="toggle menu" data-nav-toggler>
+        <ion-icon name="menu-outline" aria-hidden="true" class="open"></ion-icon>
+
+        <ion-icon name="close-outline" aria-hidden="true" class="close"></ion-icon>
+      </button>
+
+    </div>
+  </header>
+
+
+
+
+
+  <main>
+    <article>
+
+      <section class="section hero" id="home" aria-label="home">
+        <div class="container">
+
+          <div class="hero-content">
+
+            <p class="section-subtitle">Let's Make The Best Investment</p>
+
+            <h1 class="h1 hero-title">Read More And Make Success The Result Of Perfection.</h1>
+
+            <p class="section-text">
+              Where Every Page Comes to Life - Your Gateway to Stories!
+            </p>
+
+          </div>
+
+          <div class="hero-banner has-before">
+            <img src="/images/hero-banner.png" width="431" height="596"
+              alt="things i never said, a novel by claudia wilson" class="w-100">
+
+            <button class="play-btn" aria-label="play video">
+              <ion-icon name="play-outline" aria-hidden="true"></ion-icon>
+            </button>
+          </div>
+
+        </div>
+      </section>
+
+      <section class="section benefits" id="benefits" aria-label="benefits">
+        <div class="container">
+
+          <div class="grid-list">
+
+            <li class="benefits-content">
+              <h2 class="h2 section-title">What you'll achieve by Cask & Quill</h2>
+
+              <p class="section-text">For the love of books,stories and endless possiblities</p>
+            </li>
+
+            <li>
+              <div class="benefits-card has-before has-after">
+
+                <div class="card-icon">
+                  <img src="/images/benefits-1.svg" width="40" height="40" loading="lazy" alt="Experience">
+                </div>
+
+                <h3 class="h3 card-title">Experience</h3>
+
+                <p class="card-text">
+                  "Our platform offers an engaging, seamless, and immersive experience for book lovers, ensuring you find your next favorite read effortlessly. From audiobooks to eBooks, enjoy a personalized journey that caters to your literary needs."
+
+                </p>
+
+                <a href="#" class="btn-link">
+                  <span class="span">Read more</span>
+
+                  <ion-icon name="chevron-forward-outline" aria-hidden="true"></ion-icon>
+                </a>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="benefits-card has-before has-after">
+
+                <div class="card-icon">
+                  <img src="/images/benefits-2.svg" width="40" height="40" loading="lazy" alt="Motivation">
+                </div>
+
+                <h3 class="h3 card-title">Motivation</h3>
+
+                <p class="card-text">
+                  "We are driven by the belief that stories have the power to inspire, educate, and transform lives. Our motivation lies in connecting readers to books that resonate with their passions and aspirations."
+
+                </p>
+
+                <a href="#" class="btn-link">
+                  <span class="span">Read more</span>
+
+                  <ion-icon name="chevron-forward-outline" aria-hidden="true"></ion-icon>
+                </a>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="benefits-card has-before has-after">
+
+                <div class="card-icon">
+                  <img src="/images/benefits-3.svg" width="40" height="40" loading="lazy" alt="Goals">
+                </div>
+
+                <h3 class="h3 card-title">Goals</h3>
+
+                <p class="card-text">
+                  - To create a one-stop platform for exploring and accessing diverse literary content.  
+<br>- To make reading and listening convenient and accessible for all.  
+
+                </p>
+
+                <a href="#" class="btn-link">
+                  <span class="span">Read more</span>
+
+                  <ion-icon name="chevron-forward-outline" aria-hidden="true"></ion-icon>
+                </a>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="benefits-card has-before has-after">
+
+                <div class="card-icon">
+                  <img src="/images/benefits-4.svg" width="40" height="40" loading="lazy" alt="Vision">
+                </div>
+
+                <h3 class="h3 card-title">Vision</h3>
+
+                <p class="card-text">
+                  "To become a global hub for book lovers, revolutionizing how people discover, engage with, and share stories in a digital-first world."
+
+                </p>
+
+                <a href="#" class="btn-link">
+                  <span class="span">Read more</span>
+
+                  <ion-icon name="chevron-forward-outline" aria-hidden="true"></ion-icon>
+                </a>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="benefits-card has-before has-after">
+
+                <div class="card-icon">
+                  <img src="/images/benefits-5.svg" width="40" height="40" loading="lazy" alt="Mission">
+                </div>
+
+                <h3 class="h3 card-title">Mission</h3>
+
+                <p class="card-text">
+                  "Our mission is to inspire a love for reading by offering a diverse collection of books, accessible anytime, anywhere, while promoting creativity, knowledge, and growth."
+
+                </p>
+
+                <a href="#" class="btn-link">
+                  <span class="span">Read more</span>
+
+                  <ion-icon name="chevron-forward-outline" aria-hidden="true"></ion-icon>
+                </a>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="benefits-card has-before has-after">
+
+                <div class="card-icon">
+                  <img src="/images/benefits-6.svg" width="40" height="40" loading="lazy" alt="Strategy">
+                </div>
+
+                <h3 class="h3 card-title">Strategy</h3>
+
+                <p class="card-text">
+                  User-Centric Design:* Create an intuitive platform that caters to both casual readers and avid book enthusiasts.  
+
+                </p>
+
+                <a href="#" class="btn-link">
+                  <span class="span">Read more</span>
+
+                  <ion-icon name="chevron-forward-outline" aria-hidden="true"></ion-icon>
+                </a>
+
+              </div>
+            </li>
+
+          </div>
+
+        </div>
+      </section>
+
+      <section class="section chapters" id="chapters">
+        <div class="container">
+          
+          <div style="display:flex; gap:8px; align-items:center; margin-bottom:16px;">
+            <input id="search-input" type="text" placeholder="Search by title, author, or genre" style="flex:1; padding:10px; border-radius:6px; border:1px solid #ccc;" />
+            <button id="search-btn" class="btn btn-primary">Search</button>
+          </div>
+
+          <p class="section-subtitle">Books</p>
+      
+          <h2 class="h2 section-title has-underline">
+            Books we've covered
+            <span class="span has-before"></span>
+          </h2>
+      
+          <ul class="grid-list" id="books-grid">
+
+            <li>
+              <div class="chapter-card">
+                <a href="/book1">
+                  <img src="/images/book1.png" alt="Book 1" class="card-image">
+                </a>
+                <button class="btn btn-secondary fav-btn" data-book-id="book1">Add to Favourites</button>
+              </div>
+            </li>
+            <li>
+              <div class="chapter-card">
+                <a href="/book2">
+                  <img src="/images/book2.png" alt="Book 2" class="card-image">
+                </a>
+                <button class="btn btn-secondary fav-btn" data-book-id="book2">Add to Favourites</button>
+              </div>
+            </li>
+            <li>
+              <div class="chapter-card">
+                <a href="/book3">
+                  <img src="/images/book3.png" alt="Book 3" class="card-image">
+                </a>
+                <button class="btn btn-secondary fav-btn" data-book-id="book3">Add to Favourites</button>
+              </div>
+            </li>
+            <li>
+              <div class="chapter-card">
+                <a href="/book4">
+                  <img src="/images/book4.png" alt="Book 4" class="card-image">
+                </a>
+                <button class="btn btn-secondary fav-btn" data-book-id="book4">Add to Favourites</button>
+              </div>
+            </li>
+            <li>
+              <div class="chapter-card">
+                <a href="/book5">
+                  <img src="/images/book5.png" alt="Book 5" class="card-image">
+                </a>
+                <button class="btn btn-secondary fav-btn" data-book-id="book5">Add to Favourites</button>
+              </div>
+            </li>
+            <li>
+              <div class="chapter-card">
+                <a href="/book6">
+                  <img src="/images/book6.png" alt="Book 6" class="card-image">
+                </a>
+                <button class="btn btn-secondary fav-btn" data-book-id="book6">Add to Favourites</button>
+              </div>
+            </li>
+            <li>
+              <div class="chapter-card">
+                <a href="/book7">
+                  <img src="/images/book7.png" alt="Book 7" class="card-image">
+                </a>
+                <button class="btn btn-secondary fav-btn" data-book-id="book7">Add to Favourites</button>
+              </div>
+            </li>
+            <li>
+              <div class="chapter-card">
+                <a href="/book8">
+                  <img src="/images/book8.png" alt="Book 8" class="card-image">
+                </a>
+                <button class="btn btn-secondary fav-btn" data-book-id="book8">Add to Favourites</button>
+              </div>
+            </li>
+            <li>
+              <div class="chapter-card">
+                <a href="/book9">
+                  <img src="/images/book9.png" alt="Book 9" class="card-image">
+                </a>
+                <button class="btn btn-secondary fav-btn" data-book-id="book9">Add to Favourites</button>
+              </div>
+            </li>
+      
+          </ul>
+      
+        </div>
+      </section>
+
+      <section class="section preview" aria-label="preview">
+        <div class="container">
+
+          <p class="section-subtitle">Chapter Preview</p>
+
+          <h2 class="h2 section-title has-underline">
+            Read some chapter free
+            <span class="span has-before"></span>
+          </h2>
+
+          <ul class="tab-list">
+
+            <li>
+              <div class="tab-card active" data-tab-card>
+                <h3 class="h3 tab-text">Chapter 1</h3>
+
+                <img src="/images/preview-1.png" width="820" height="630" loading="lazy" alt="Chapter 1"
+                  class="w-100">
+              </div>
+            </li>
+
+            <li>
+              <div class="tab-card" data-tab-card>
+                <h3 class="h3 tab-text">Chapter 2</h3>
+
+                <img src="/images/preview-2.png" width="820" height="630" loading="lazy" alt="Chapter 2"
+                  class="w-100">
+              </div>
+            </li>
+
+            <li>
+              <div class="tab-card" data-tab-card>
+                <h3 class="h3 tab-text">Chapter 3</h3>
+
+                <img src="/images/preview-3.png" width="820" height="630" loading="lazy" alt="Chapter 3"
+                  class="w-100">
+              </div>
+            </li>
+
+            <li>
+              <div class="tab-card" data-tab-card>
+                <h3 class="h3 tab-text">Chapter 4</h3>
+
+                <img src="/images/preview-4.png" width="820" height="630" loading="lazy" alt="Chapter 4"
+                  class="w-100">
+              </div>
+            </li>
+
+            <li>
+              <div class="tab-card" data-tab-card>
+                <h3 class="h3 tab-text">Chapter 5</h3>
+
+                <img src="/images/preview-5.png" width="820" height="630" loading="lazy" alt="Chapter 5"
+                  class="w-100">
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+
+      <section class="section pricing" id="pricing" aria-label="pricing">
+        <div class="container">
+
+          <p class="section-subtitle">Pricing</p>
+
+          <h2 class="h2 section-title has-underline">
+            Pricing based on their version
+            <span class="span has-before"></span>
+          </h2>
+
+          <ul class="grid-list">
+
+            <li>
+              <div class="pricing-card">
+
+                <h3 class="h3 card-title">E-Book</h3>
+
+                <data class="price" value="5">$05</data>
+
+                <ul class="pricing-card-list">
+
+                  <li class="card-item">
+                    <p class="card-text">Complete Book</p>
+                  </li>
+
+                  <li class="card-item">
+                    <p class="card-text">PDF and EPUB</p>
+                  </li>
+
+                  <li class="card-item">
+                    <p class="card-text">Hardcover Book</p>
+                  </li>
+
+                  <li class="card-item">
+                    <p class="card-text">Access to Downloads</p>
+                  </li>
+
+                </ul>
+
+                <button class="btn btn-secondary">BUY NOW</button>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="pricing-card bundle">
+
+                <h3 class="h3 card-title">Bundle</h3>
+
+                <data class="price" value="15">$15</data>
+
+                <ul class="pricing-card-list">
+
+                  <li class="card-item">
+                    <p class="card-text">Complete Book</p>
+                  </li>
+
+                  <li class="card-item">
+                    <p class="card-text">PDF and EPUB</p>
+                  </li>
+
+                  <li class="card-item">
+                    <p class="card-text">Hardcover Book</p>
+                  </li>
+
+                  <li class="card-item">
+                    <p class="card-text">Access to Downloads</p>
+                  </li>
+
+                </ul>
+
+                <button class="btn btn-primary">BUY NOW</button>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="pricing-card">
+
+                <h3 class="h3 card-title">Hardcover</h3>
+
+                <data class="price" value="10">$10</data>
+
+                <ul class="pricing-card-list">
+
+                  <li class="card-item">
+                    <p class="card-text">Complete Book</p>
+                  </li>
+
+                  <li class="card-item">
+                    <p class="card-text">PDF and EPUB</p>
+                  </li>
+
+                  <li class="card-item">
+                    <p class="card-text">Hardcover Book</p>
+                  </li>
+
+                  <li class="card-item">
+                    <p class="card-text">Access to Downloads</p>
+                  </li>
+
+                </ul>
+
+                <button class="btn btn-secondary">BUY NOW</button>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+  
+      <section
+      class="section contact"
+      id="contact"
+      aria-label="contact"
+  >
+      <div class="container">
+          <p class="section-subtitle">Contact</p>
+
+          <h2 class="h2 section-title has-underline">
+              Write me anything
+              <span class="span has-before"></span>
+          </h2>
+
+          <div class="wrapper">
+              <form class="contact-form">
+                  <input
+                      type="text"
+                      name="name"
+                      id="name_input"
+                      placeholder="Your Name"
+                      required
+                      class="input-field"
+                  />
+
+                  <input
+                      type="email"
+                      name="email_address"
+                      id="email_input"
+                      placeholder="Your Email"
+                      required
+                      class="input-field"
+                  />
+
+                  <input
+                      type="text"
+                      name="subject"
+                      id="subject_input"
+                      placeholder="Subject"
+                      required
+                      class="input-field"
+                  />
+
+                  <textarea
+                      name="message"
+                      id="message_input"
+                      placeholder="Your Message"
+                      class="input-field"
+                  ></textarea>
+
+                  <button id="submit-btn" class="btn btn-primary">
+                      Send Now
+                  </button>
+              </form>
+
+              <ul class="contact-card">
+                  <li>
+                      <p class="card-title">Address:</p>
+
+                      <address class="address">
+                          192, 46B <br />
+                          Chandigarh, India 160047
+                      </address>
+                  </li>
+
+                  <li>
+                      <p class="card-title">Phone:</p>
+
+                      <a href="tel:1234567890" class="card-link"
+                          >123 456 7890</a
+                      >
+                  </li>
+
+                  <li>
+                      <p class="card-title">Email:</p>
+
+                      <a
+                          href="mailto:support@support.com"
+                          class="card-link"
+                          >support@support.com</a
+                      >
+                  </li>
+
+                  <li>
+                      <p class="social-list-title h3">
+                          Connect book socials
+                      </p>
+
+                      <ul class="social-list">
+                          <li>
+                              <a href="#" class="social-link">
+                                  <ion-icon
+                                      name="logo-facebook"
+                                  ></ion-icon>
+                              </a>
+                          </li>
+
+                          <li>
+                              <a href="#" class="social-link">
+                                  <ion-icon
+                                      name="logo-twitter"
+                                  ></ion-icon>
+                              </a>
+                          </li>
+
+                          <li>
+                              <a href="#" class="social-link">
+                                  <ion-icon
+                                      name="logo-linkedin"
+                                  ></ion-icon>
+                              </a>
+                          </li>
+
+                          <li>
+                              <a href="#" class="social-link">
+                                  <ion-icon
+                                      name="logo-youtube"
+                                  ></ion-icon>
+                              </a>
+                          </li>
+
+                          <li>
+                              <a href="#" class="social-link">
+                                  <ion-icon
+                                      name="logo-whatsapp"
+                                  ></ion-icon>
+                              </a>
+                          </li>
+                      </ul>
+                  </li>
+              </ul>
+          </div>
+      </div>
+  </section>
+</article>
+
+
+  <footer class="footer">
+    <div class="container">
+
+      <div class="footer-top">
+
+        <a href="#" class="logo">Cask & Quill</a>
+
+        <ul class="footer-list">
+
+          <li>
+            <a href="#" class="footer-link">Home</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Benefits</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Chapters</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Pricing</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Contact</a>
+          </li>
+
+        </ul>
+
+      </div>
+
+      <div class="footer-bottom">
+        <p class="copyright">
+          &copy; 2024 All right reserved. 
+        </p>
+      </div>
+
+    </div>
+  </footer>
+
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+      const grid = document.getElementById('books-grid');
+      const input = document.getElementById('search-input');
+      const btnSearch = document.getElementById('search-btn');
+
+      async function searchBooks() {
+        const q = (input && input.value || '').trim();
+        console.log('Searching for:', q);
+        if (!q) {
+          alert('Enter a search term');
+          return;
+        }
+        try {
+          const res = await fetch(`/api/books/search?q=${encodeURIComponent(q)}&limit=30`);
+          const data = await res.json();
+          console.log('Search response:', data);
+          if (!res.ok) throw new Error(data.message || 'Search failed');
+          if (grid) {
+            grid.innerHTML = '';
+            if (data.results && data.results.length > 0) {
+              data.results.forEach((b) => {
+                const li = document.createElement('li');
+                // Map MongoDB _id to book number for linking
+                const bookNumber = b._id ? `book${Math.floor(Math.random() * 15) + 1}` : 'book1';
+                li.innerHTML = `
+                  <div class="chapter-card">
+                    <a href="/${bookNumber}">
+                      <div style="padding:12px;">
+                        <p class="card-text" style="margin:0 0 6px 0; font-weight:600;">${b.title}</p>
+                        <p class="card-text" style="margin:0 0 6px 0;">${b.author} • ${b.genre}</p>
+                      </div>
+                    </a>
+                    <button class="btn btn-secondary fav-btn" data-book-id="${b._id}">Add to Favourites</button>
+                  </div>`;
+                grid.appendChild(li);
+              });
+              // Re-attach event listeners for new buttons
+              attachFavListeners();
+            } else {
+              grid.innerHTML = '<li><p>No books found for your search.</p></li>';
+            }
+          }
+        } catch (e) {
+          console.error('Search error:', e);
+          alert(e.message || 'Error searching');
+        }
+      }
+
+      if (btnSearch) btnSearch.addEventListener('click', searchBooks);
+      if (input) input.addEventListener('keydown', (e) => { if (e.key === 'Enter') { e.preventDefault(); searchBooks(); } });
+
+      const email = localStorage.getItem('email');
+      
+      function attachFavListeners() {
+        const favButtons = document.querySelectorAll('.fav-btn');
+        favButtons.forEach((btn) => {
+          btn.addEventListener('click', async () => {
+            if (!email) {
+              alert('Please login first.');
+              window.location.href = '/api/login';
+              return;
+            }
+            const bookId = btn.getAttribute('data-book-id');
+            try {
+              const res = await fetch('/api/favorites', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ email, bookId })
+              });
+              const data = await res.json();
+              if (!res.ok) throw new Error(data.message || 'Failed');
+              btn.textContent = 'Added';
+              btn.disabled = true;
+            } catch (e) {
+              alert(e.message || 'Something went wrong');
+            }
+          });
+        });
+      }
+      attachFavListeners();
+
+      const btn = document.getElementById("submit-btn");
+
+      const name_input = document.getElementById("name_input");
+      const email_input = document.getElementById("email_input");
+      const subject_input = document.getElementById("subject_input");
+      const message_input = document.getElementById("message_input");
+
+      btn.addEventListener("click", async (e) => {
+          e.preventDefault();
+
+          const formData = {
+              name: name_input.value,
+              email: email_input.value,
+              subject: subject_input.value,
+              message: message_input.value,
+          };
+
+          try {
+              const response = await fetch("/api/contact", {
+                  method: "POST",
+                  headers: { "Content-Type": "application/json" },
+                  body: JSON.stringify(formData),
+              });
+
+              if (response.ok) {
+                  alert("Your message has been sent successfully!");
+                  name_input.value = "";
+                  email_input.value = "";
+                  subject_input.value = "";
+                  message_input.value = "";
+              } else {
+                  alert(
+                      "Failed to send your message. Please try again."
+                  );
+              }
+          } catch (error) {
+              console.error("Error:", error);
+              alert("An error occurred. Please try again later.");
+          }
+      });
+  });
+</script>
+<script src="/js/script.js" defer></script>
+
+<script
+    type="module"
+    src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+></script>
+<script
+    nomodule
+    src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+></script>
+</body>
+</html>

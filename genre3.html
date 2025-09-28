@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fiction Books - Cask & Quill</title>
+    <style>
+        body {
+            font-family: 'Georgia', serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f5eb;
+            color: #333;
+        }
+        .navbar {
+            background-color: #7d1a1a;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: relative;
+        }
+        .navbar .logo {
+            font-size: 1.8rem;
+            font-weight: bold;
+            color: white;
+        }
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+        .navbar a:hover {
+            text-decoration: underline;
+        }
+        .header {
+            text-align: center;
+            padding: 50px 20px;
+            background-color: #f9f5eb;
+        }
+        .header h1 {
+            color: #3d3d3d;
+            font-size: 2.5rem;
+        }
+        .header p {
+            color: #7d1a1a;
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+        .books-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 30px;
+            padding: 40px;
+            max-width: 1200px;
+            margin: auto;
+        }
+        .book-card {
+            background-color: white;
+            border-radius: 12px;
+            box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+            overflow: hidden;
+            text-align: center;
+            padding: 20px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .book-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+        }
+        .book-card img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+        .book-card h3 {
+            margin: 15px 0;
+            color: #3d3d3d;
+            font-size: 1.2rem;
+        }
+        .book-card p {
+            font-size: 1rem;
+            color: #555;
+        }
+        .footer {
+            background-color: #7d1a1a;
+            color: white;
+            text-align: center;
+            padding: 15px 0;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo">Cask & Quill</div>
+        <div>
+            <a href="/api/dashboard">Home</a>
+            <a href="/public2/main">Favourites</a>
+            <a href="/api/genre2">Romance</a>
+            <a href="/api/genre1">Horror</a>
+            <a href="/api/genre">Spiritual</a>
+        </div>
+    </div>
+
+    <div class="header">
+        <h1>Immerse Yourself in the World of Fiction</h1>
+        <p>Discover Our Fiction Collection and Escape into New Realms</p>
+    </div>
+
+    <div class="books-grid">
+        <div class="book-card">
+            <img src="https://m.media-amazon.com/images/I/91dUzZsI5KL._UF1000,1000_QL80_.jpg" alt="Book Cover">
+            <h3>The Lost Kingdom</h3>
+            <p>An epic tale of bravery and destiny.</p>
+            <button class="button fav-btn" data-book-id="book1">Add to Favourites</button>
+        </div>
+        <div class="book-card">
+            <img src="https://m.media-amazon.com/images/I/81FuwwOHTRL._UF1000,1000_QL80_.jpg" alt="Book Cover">
+            <h3>Whispers of the Forest</h3>
+            <p>A magical journey through enchanted woods.</p>
+            <button class="button fav-btn" data-book-id="book2">Add to Favourites</button>
+        </div>
+        <div class="book-card">
+            <img src="https://m.media-amazon.com/images/I/61fhBIU14KL._AC_UF1000,1000_QL80_.jpg" alt="Book Cover">
+            <h3>Shadows of Time</h3>
+            <p>A gripping story of time travel and secrets.</p>
+            <button class="button fav-btn" data-book-id="book3">Add to Favourites</button>
+        </div>
+        <div class="book-card">
+            <img src="https://m.media-amazon.com/images/I/610JVw02uoL._AC_UF1000,1000_QL80_.jpg" alt="Book Cover">
+            <h3>Celestial Dreams</h3>
+            <p>An interstellar adventure of hope and love.</p>
+            <button class="button fav-btn" data-book-id="book4">Add to Favourites</button>
+        </div>
+        <div class="book-card">
+            <img src="https://m.media-amazon.com/images/I/81J6APjwxlL._AC_UF1000,1000_QL80_.jpg" alt="Book Cover">
+            <h3>The Midnight Library</h3>
+            <p>Endless stories in a single mystical library.</p>
+            <button class="button fav-btn" data-book-id="book5">Add to Favourites</button>
+        </div>
+        <div class="book-card">
+            <img src="https://m.media-amazon.com/images/I/81gzbzdsZqL._AC_UF1000,1000_QL80_.jpg" alt="Book Cover">
+            <h3>Fictional Truths</h3>
+            <p>Blurring the lines between reality and fantasy.</p>
+            <button class="button fav-btn" data-book-id="book6">Add to Favourites</button>
+        </div>
+        <div class="book-card">
+            <img src="https://m.media-amazon.com/images/I/71SjkJBPNGL._AC_UF1000,1000_QL80_.jpg" alt="Book Cover">
+            <h3>Edge of Tomorrow</h3>
+            <p>Fiction meets science in an apocalyptic tale.</p>
+            <button class="button fav-btn" data-book-id="book7">Add to Favourites</button>
+        </div>
+        <div class="book-card">
+            <img src="https://m.media-amazon.com/images/I/61CrvUFrb4L._UF1000,1000_QL80_.jpg" alt="Book Cover">
+            <h3>The Glass Fortress</h3>
+            <p>A saga of war, peace, and survival.</p>
+            <button class="button fav-btn" data-book-id="book8">Add to Favourites</button>
+        </div>
+        <div class="book-card">
+            <img src="https://m.media-amazon.com/images/I/61NQVlwSiDL._AC_UF1000,1000_QL80_.jpg" alt="Book Cover">
+            <h3>Parallel Lives</h3>
+            <p>What if your life had a twin in another realm?</p>
+            <button class="button fav-btn" data-book-id="book9">Add to Favourites</button>
+        </div>
+        <div class="book-card">
+            <img src="https://m.media-amazon.com/images/I/71lUpB4OrDL._AC_UF1000,1000_QL80_.jpg" alt="Book Cover">
+            <h3>Forgotten Tales</h3>
+            <p>Rediscovering stories from the sands of time.</p>
+            <button class="button fav-btn" data-book-id="book10">Add to Favourites</button>
+        </div>
+        <div class="book-card">
+            <img src="https://m.media-amazon.com/images/I/91VMB-0fDOL._UF1000,1000_QL80_.jpg" alt="Book Cover">
+            <h3>Infinity's Edge</h3>
+            <p>A space odyssey that defies imagination.</p>
+            <button class="button fav-btn" data-book-id="book11">Add to Favourites</button>
+        </div>
+        <div class="book-card">
+            <img src="https://m.media-amazon.com/images/I/715F7RvunwL._AC_UF1000,1000_QL80_.jpg" alt="Book Cover">
+            <h3>Chronicles of Dawn</h3>
+            <p>A new era begins with an untold legend.</p>
+            <button class="button fav-btn" data-book-id="book12">Add to Favourites</button>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const email = localStorage.getItem('email');
+            document.querySelectorAll('.fav-btn').forEach((btn) => {
+                btn.addEventListener('click', async () => {
+                    if (!email) {
+                        alert('Please login first.');
+                        window.location.href = '/api/login';
+                        return;
+                    }
+                    const bookId = btn.getAttribute('data-book-id');
+                    try {
+                        const res = await fetch('/api/favorites', {
+                            method: 'POST',
+                            headers: { 'Content-Type': 'application/json' },
+                            body: JSON.stringify({ email, bookId })
+                        });
+                        const data = await res.json();
+                        if (!res.ok) throw new Error(data.message || 'Failed');
+                        btn.textContent = 'Added';
+                        btn.disabled = true;
+                    } catch (e) {
+                        alert(e.message || 'Something went wrong');
+                    }
+                });
+            });
+        });
+    </script>
+    <div class="footer">
+        <p>&copy; 2025 Cask & Quill. All rights reserved.</p>
+    </div>
+</body>
+</html>

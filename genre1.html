@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Horror Books - Cask & Quill</title>
+    <style>
+        body {
+            font-family: 'Georgia', serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f5eb;
+            color: #333;
+        }
+        .navbar {
+            background-color: #7d1a1a;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: relative;
+        }
+        .navbar .logo {
+            font-size: 1.8rem;
+            font-weight: bold;
+            color: white;
+        }
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+        .navbar a:hover {
+            text-decoration: underline;
+        }
+        .header {
+            text-align: center;
+            padding: 50px 20px;
+            background-color: #f9f5eb;
+        }
+        .header h1 {
+            color: #3d3d3d;
+            font-size: 2.5rem;
+        }
+        .header p {
+            color: #7d1a1a;
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+        .books-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 30px;
+            padding: 40px;
+            max-width: 1200px;
+            margin: auto;
+        }
+        .book-card {
+            background-color: white;
+            border-radius: 12px;
+            box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+            overflow: hidden;
+            text-align: center;
+            padding: 20px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .book-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+        }
+        .book-card img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+        .book-card h3 {
+            margin: 15px 0;
+            color: #3d3d3d;
+            font-size: 1.2rem;
+        }
+        .book-card p {
+            font-size: 1rem;
+            color: #555;
+        }
+        .footer {
+            background-color: #7d1a1a;
+            color: white;
+            text-align: center;
+            padding: 15px 0;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <div class="navbar">
+        <div class="logo">Cask & Quill</div>
+        <div>
+            <a href="/api/dashboard">Home</a>
+            <a href="/public2/main">Favourites</a>
+            <a href="/api/genre3">Fiction</a>
+            <a href="/api/genre2">Romance</a>
+            <a href="/api/genre">Spiritual</a>
+        </div>
+    </div>
+
+    <!-- Header Section -->
+    <div class="header">
+        <h1>Dive into the Darkness</h1>
+        <p>Explore the most chilling and spine-tingling horror audiobooks.</p>
+    </div>
+
+    <!-- Books Section -->
+    <div class="books-grid">
+        <div class="book-card">
+            <img src="https://d3knv99tpa4iwv.cloudfront.net/bcz-png/png24-front/bookcover0025821.jpg" alt="Book Cover">
+            <h3>The Sykamore Leaves</h3>
+            <p>Golden letters on a dark canvas. A haunting promise.</p>
+            <button class="button fav-btn" data-book-id="book7">Add to Favourites</button>
+        </div>
+        <div class="book-card">
+            <img src="https://d3knv99tpa4iwv.cloudfront.net/bcz-png/png24-front/bookcover0014800.jpg" alt="Book Cover">
+            <h3>Strangers Of The Night</h3>
+            <p>The whispers grow louder. The night calls. Are you brave enough to answer?.</p>
+            <button class="button fav-btn" data-book-id="book8">Add to Favourites</button>
+        </div>
+        <div class="book-card">
+            <img src="https://d3knv99tpa4iwv.cloudfront.net/bcz-png/png24-front/bookcover0020826.jpg" alt="Book Cover">
+            <h3>These Delusion Solitude</h3>
+            <p>A chilling whisper from the depths.</p>
+            <button class="button fav-btn" data-book-id="book9">Add to Favourites</button>
+        </div>
+        <div class="book-card">
+            <img src="https://d3knv99tpa4iwv.cloudfront.net/bcz-png/png24-front/bookcover0023634.jpg" alt="Book Cover">
+            <h3>The Light And Shadow</h3>
+            <p>Whispers of the afterlife.</p>
+            <button class="button fav-btn" data-book-id="book10">Add to Favourites</button>
+        </div>
+        <div class="book-card">
+            <img src="https://d3knv99tpa4iwv.cloudfront.net/bcz-png/png24-front/bookcover0026305.jpg" alt="Book Cover">
+            <h3>The Cradel Night</h3>
+            <p>A chilling prelude. Innocence shattered.</p>
+            <button class="button fav-btn" data-book-id="book11">Add to Favourites</button>
+        </div>
+        <div class="book-card">
+            <img src="https://d3knv99tpa4iwv.cloudfront.net/bcz-png/png24-front/bookcover0030023.jpg" alt="Book Cover">
+            <h3>Veil Of Darkness</h3>
+            <p>Whispers of dread echo in the decaying halls.</p>
+            <button class="button fav-btn" data-book-id="book12">Add to Favourites</button>
+        </div>
+        <div class="book-card">
+            <img src="https://d3knv99tpa4iwv.cloudfront.net/bcz-png/png24-front/bookcover0025070.jpg" alt="Book Cover">
+            <h3>The Demonic Skies</h3>
+            <p>Blood-soaked pages, a tale of terror unfolds.</p>
+            <button class="button fav-btn" data-book-id="book13">Add to Favourites</button>
+        </div>
+        <div class="book-card">
+            <img src="https://d3knv99tpa4iwv.cloudfront.net/bcz-png/png24-front/bookcover0032559.jpg" alt="Book Cover">
+            <h3>The Gloomy Forest</h3>
+            <p>The forest's secrets yearn to be unveiled. Embrace the darkness.</p>
+            <button class="button fav-btn" data-book-id="book14">Add to Favourites</button>
+        </div>
+        <div class="book-card">
+            <img src="https://d3knv99tpa4iwv.cloudfront.net/bcz-png/png24-front/bookcover0032576.jpg" alt="Book Cover">
+            <h3>Veil Of The Phantom</h3>
+            <p>Bare branches, silent crows, and a story untold. The veil hides a haunting truth.</p>
+            <button class="button fav-btn" data-book-id="book15">Add to Favourites</button>
+        </div>
+        <div class="book-card">
+            <img src="https://d3knv99tpa4iwv.cloudfront.net/bcz-png/png24-front/bookcover0033024.jpg" alt="Book Cover">
+            <h3>The Fight Of Giants</h3>
+            <p>The fight for survival, etched in blood and desire. A tale of giants.</p>
+            <button class="button fav-btn" data-book-id="book1">Add to Favourites</button>
+        </div>
+        <div class="book-card">
+            <img src="https://d3knv99tpa4iwv.cloudfront.net/bcz-png/png24-front/bookcover0005842.jpg" alt="Book Cover">
+            <h3>Memories Of Dead</h3>
+            <p>The air grows thick with dread. A silent promise of horror.</p>
+            <button class="button fav-btn" data-book-id="book2">Add to Favourites</button>
+        </div>
+        <div class="book-card">
+            <img src="https://d3knv99tpa4iwv.cloudfront.net/bcz-png/png24-front/bookcover0024712.jpg" alt="Book Cover">
+            <h3>The Crying Diary</h3>
+            <p>Beneath the gnarled branches, secrets weep. The diary's truth, a chilling sleep.</p>
+            <button class="button fav-btn" data-book-id="book3">Add to Favourites</button>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const email = localStorage.getItem('email');
+            document.querySelectorAll('.fav-btn').forEach((btn) => {
+                btn.addEventListener('click', async () => {
+                    if (!email) {
+                        alert('Please login first.');
+                        window.location.href = '/api/login';
+                        return;
+                    }
+                    const bookId = btn.getAttribute('data-book-id');
+                    try {
+                        const res = await fetch('/api/favorites', {
+                            method: 'POST',
+                            headers: { 'Content-Type': 'application/json' },
+                            body: JSON.stringify({ email, bookId })
+                        });
+                        const data = await res.json();
+                        if (!res.ok) throw new Error(data.message || 'Failed');
+                        btn.textContent = 'Added';
+                        btn.disabled = true;
+                    } catch (e) {
+                        alert(e.message || 'Something went wrong');
+                    }
+                });
+            });
+        });
+    </script>
+
+    <!-- Footer Section -->
+    <div class="footer">
+        <p>&copy; 2024 Cask & Quill. All rights reserved.</p>
+    </div>
+</body>
+</html>

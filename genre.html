@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spiritual Books - Cask & Quill</title>
+    <style>
+        body {
+            font-family: 'Georgia', serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f5eb;
+            color: #333;
+        }
+        .navbar {
+            background-color: #7d1a1a;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: relative;
+        }
+        .navbar .logo {
+            font-size: 1.8rem;
+            font-weight: bold;
+            color: white;
+        }
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+        .navbar a:hover {
+            text-decoration: underline;
+        }
+        .header {
+            text-align: center;
+            padding: 50px 20px;
+            background-color: #f9f5eb;
+        }
+        .header h1 {
+            color: #3d3d3d;
+            font-size: 2.5rem;
+        }
+        .header p {
+            color: #7d1a1a;
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+        .books-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 30px;
+            padding: 40px;
+            max-width: 1200px;
+            margin: auto;
+        }
+        .book-card {
+            background-color: white;
+            border-radius: 12px;
+            box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+            overflow: hidden;
+            text-align: center;
+            padding: 20px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .book-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+        }
+        .book-card img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+        .book-card h3 {
+            margin: 15px 0;
+            color: #3d3d3d;
+            font-size: 1.2rem;
+        }
+        .book-card p {
+            font-size: 1rem;
+            color: #555;
+        }
+        .footer {
+            background-color: #7d1a1a;
+            color: white;
+            text-align: center;
+            padding: 15px 0;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <div class="navbar">
+        <div class="logo">Cask & Quill</div>
+        <div>
+            <a href="/api/dashboard">Home</a>
+            <a href="/public2/main">Favourites</a>
+            <a href="/api/genre3">Fiction</a>
+            <a href="/api/genre2">Romance</a>
+            <a href="/api/genre1">Horror</a>
+        </div>
+    </div>
+
+    <!-- Header Section -->
+    <div class="header">
+        <h1>Enrich Your Mind and Spirit</h1>
+        <p>Discover a curated collection of spiritual audiobooks to inspire and uplift your soul.</p>
+    </div>
+
+    <!-- Books Section -->
+    <div class="books-grid">
+        <div class="book-card">
+            <img src="https://d3knv99tpa4iwv.cloudfront.net/bcz-png/png24-front/bookcover0030895.jpg" alt="Book Cover">
+            <h3>The Field Of Freedom</h3>
+            <p>Focusing on Hope and Liberation.</p>
+            <button class="button fav-btn" data-book-id="book10">Add to Favourites</button>
+        </div>
+        <div class="book-card">
+            <img src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1309287434i/38210.jpg" alt="Book Cover">
+            <h3>The Art Of Happiness</h3>
+            <p>Emphasizing the Ethereal and Spiritual.</p>
+            <button class="button fav-btn" data-book-id="book11">Add to Favourites</button>
+        </div>
+        <div class="book-card">
+            <img src="https://images4.penguinrandomhouse.com/cover/9780143133803" alt="Book Cover">
+            <h3>Tao Te Ching</h3>
+            <p>Dive deep into the essence of existence.</p>
+            <button class="button fav-btn" data-book-id="book12">Add to Favourites</button>
+        </div>
+        <div class="book-card">
+            <img src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1689947880i/6708.jpg" alt="Book Cover">
+            <h3>The Power Of Now</h3>
+            <p>A guide to living in the present.</p>
+            <button class="button fav-btn" data-book-id="book13">Add to Favourites</button>
+        </div>
+        <div class="book-card">
+            <img src="https://bookcoverexpress.com/wp-content/uploads/2020/03/spiritual-book-cover-waythere-1-1-400x600.webp" alt="Book Cover">
+            <h3>The Way Of There</h3>
+            <p>Seeing the journey through, one step at a time.</p>
+            <button class="button fav-btn" data-book-id="book14">Add to Favourites</button>
+        </div>
+        <div class="book-card">
+            <img src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1669038629i/63376691.jpg" alt="Book Cover">
+            <h3>Mahagatha</h3>
+            <p>Dive into the Puranas, where gods and mortals intertwine.</p>
+            <button class="button fav-btn" data-book-id="book15">Add to Favourites</button>
+        </div>
+        <div class="book-card">
+            <img src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1629378189i/52036.jpg" alt="Book Cover">
+            <h3>Siddhartha</h3>
+            <p>Find your inner peace. Embrace the journey of self-discovery.</p>
+            <button class="button fav-btn" data-book-id="book1">Add to Favourites</button>
+        </div>
+        <div class="book-card">
+            <img src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1592316004i/54120792.jpg" alt="Book Cover">
+            <h3>Bhagavad Gita</h3>
+            <p>Facing the battlefield of life, find strength in the Gita.</p>
+            <button class="button fav-btn" data-book-id="book2">Add to Favourites</button>
+        </div>
+        <div class="book-card">
+            <img src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1176433520i/129603.jpg" alt="Book Cover">
+            <h3>You Can Heal Your Life</h3>
+            <p>Unleash your inner sunshine! Embrace the power within to heal your life.</p>
+            <button class="button fav-btn" data-book-id="book3">Add to Favourites</button>
+        </div>
+        <div class="book-card">
+            <img src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1707466651i/208010351.jpg" alt="Book Cover">
+            <h3>The Echoes of Enigma</h3>
+            <p>Illuminating Life's Profound Akashic Mysteries.</p>
+            <button class="button fav-btn" data-book-id="book4">Add to Favourites</button>
+        </div>
+        <div class="book-card">
+            <img src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1440111652i/56495.jpg" alt="Book Cover">
+            <h3>The Purpose Driven Life</h3>
+            <p>What on Earth Am I Here for?.</p>
+            <button class="button fav-btn" data-book-id="book5">Add to Favourites</button>
+        </div>
+        <div class="book-card">
+            <img src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1320481647i/104909.jpg" alt="Book Cover">
+            <h3>The Book of Secrets</h3>
+            <p>Unlocking the Hidden Dimensions of Your Life.</p>
+            <button class="button fav-btn" data-book-id="book6">Add to Favourites</button>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const email = localStorage.getItem('email');
+            document.querySelectorAll('.fav-btn').forEach((btn) => {
+                btn.addEventListener('click', async () => {
+                    if (!email) {
+                        alert('Please login first.');
+                        window.location.href = '/api/login';
+                        return;
+                    }
+                    const bookId = btn.getAttribute('data-book-id');
+                    try {
+                        const res = await fetch('/api/favorites', {
+                            method: 'POST',
+                            headers: { 'Content-Type': 'application/json' },
+                            body: JSON.stringify({ email, bookId })
+                        });
+                        const data = await res.json();
+                        if (!res.ok) throw new Error(data.message || 'Failed');
+                        btn.textContent = 'Added';
+                        btn.disabled = true;
+                    } catch (e) {
+                        alert(e.message || 'Something went wrong');
+                    }
+                });
+            });
+        });
+    </script>
+
+    <!-- Footer Section -->
+    <div class="footer">
+        <p>&copy; 2024 Cask & Quill. All rights reserved.</p>
+    </div>
+</body>
+</html>
