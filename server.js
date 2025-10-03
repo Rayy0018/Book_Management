@@ -9,7 +9,7 @@ const logger = require("./middlewares/logger");
 const errorHandler = require("./middlewares/errorHandler");
 const fs = require("fs");
 
-const MONGODB_URI = 'mongodb+srv://shreyya423:Shreya123@cluster0.jkvchhm.mongodb.net/'; 
+const MONGODB_URI = 'mongodb+srv://shreyya423:<dbPass>@cluster0.jkvchhm.mongodb.net/'; 
 
 mongoose.connect(MONGODB_URI, {
     useNewUrlParser: true,
